@@ -7,12 +7,13 @@ const btnSignup = document.getElementById("registrarse"),
 btnSignIn.addEventListener("click", e => {
     formRegister.style.position = "absolute"
     formRegister.style.transform = "translateY(-300%)"
+    
 })
 
 btnSignIn.addEventListener("click", e => {
     formSesion.style.position = "absolute"
     formSesion.style.transform = "translateY(380%)"
-    formSesion.style.margin = "auto"
+
 })
 
 btnSignup.addEventListener("click", e => {
@@ -23,5 +24,6 @@ btnSignup.addEventListener("click", e => {
 btnSignup.addEventListener("click", e => {
     formRegister.style.position = "absolute"
     formRegister.style.transform = "translateY(0%)"
+    formRegister.style.transform = "translatex(50%)"
 })
 
