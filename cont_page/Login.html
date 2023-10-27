@@ -1,120 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- Cabecera -->
+<html lang="en" >
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- FontAwasome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-
-    <!-- css de login  -->
-    <link rel="stylesheet" href="/src/css/iniciosesion.css">
     <!-- css tailwind  -->
-    <link rel="stylesheet" href="./src/css/style.css">
-
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    
-    <!-- Titulo -->
-    <title>FOOD FASTER KING</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <!-- Fontawasome -->
+    <link rel="stylesheet" href="/src/css/all.min.css">
+    <!-- titulo -->
+    <title>Importadora</title>
 </head>
+<body >
 
-<body>
-    <!-- contenedor del logo  -->
-
-    
     <!-- navar  -->
     <nav class="flex justify-around items-center bg-orange-400 h-24">
-        
-        <!-- Home -->
-        <div><a href="#"><i class="fas fa-home"></i></a></div>
+
         <!-- titulo -->
         <h1 class="text-2xl font-bold"><i class="fa-solid fa-ship"></i> Importadora</h1>
-        <!-- registro/shop -->
-        <div class="flex gap-6">
-            <div><a href="/cont_page/Login.html"><i class="fa-solid fa-user "></i></a></div>
-            <div><a href=""><i class="fa-solid fa-shop"></i></a></div>
-        </div>
+        <!-- Home -->
+        <div><a href="/Index.html"><i class="fas fa-home"></i></a></div>
 
-    </nav> 
+    </nav>
 
+    <!--Formulario de Login y registro-->
+    <div class="Register flex items-center justify-center h-[90vh] max-[580px]:mt-9 max-[380px]:w-[75%] max-[380px]:mx-auto max-[380px]:mt-7 ">
 
-  
-    <main>
+        <div class=" border-2 border-orange-500 rounded-3xl max-w-[900px] h-[500px] flex max-[580px]:flex-col max-[580px]:h-auto ">
 
-        <div class="contenedor__todo">
-
-            <div class="caja__trasera">
-
-                <div class="caja__trasera-login">
-
-                    <h3>¿Ya tienes una cuenta?</h3>
-
-                    <p>Inicia sesión para entrar en la página</p>
-
-                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
-
+            <div class="w-2/5 flex justify-center flex-col text-center rounded-tl-3xl rounded-l-3xl bg-orange-50 max-[580px]:w-full max-[580px]:p-5 max-[580px]:rounded-t-3xl max-[580px]:rounded-bl-none">
+                <div class="w-full px-8">
+                    <h2 class="text-4xl ">Bienvenido Importador</h2>
+                    <p class="my-4"> Ingresa Sesión con tus datos para continuar</p>
+                    <input class="bg-transparent border-2 border-orange-200 rounded-3xl py-3 px-5 cursor-pointer hover:bg-orange-200 hover:border-none hover:text-white"  type="submit" value="Inicar Sesión" id="iniciarSesion">
                 </div>
+            </div>
 
-                <div class="caja__trasera-register">
+            <div class="flex flex-col items-center justify-center  w-3/5 rounded-tr-3xl rounded-br-3xl  bg-orange-100 h-full  max-[580px]:w-full max-[580px]:p-5 max-[580px]:rounded-t-3xl max-[580px]:rounded-bl-none">
+                
+                <div class="flex flex-col items-center justify-center px-8 ">
 
-                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <h2 class="text-3xl">Crea tu cuenta</h2>
+                    <form action="" class="mt-8 flex flex-col items-center">
 
-                    <p>Regístrate para que puedas iniciar sesión</p>
+                        <label for="" class="flex items-center mb-4 rounded-3xl px-3">
 
-                    <button id="btn__registrarse">Regístrarse</button>
+                            <i class="fa-solid fa-user "></i>
+                            <input class="w-full p-4 bg-orange-50 outline-none border-none rounded-3xl text-[#333]" type="text" name="" id="" placeholder="Nombre" >
 
+                        </label>
+
+                        <label for="" class="flex items-center mb-4 rounded-3xl px-3">
+
+                            <i class="fa-solid fa-envelope"></i>
+                            <input class="w-full p-4 bg-orange-50 outline-none border-none rounded-3xl text-[#333]" type="email" name="" id="" placeholder="Email">
+
+                        </label>
+
+                        <label for="" class="flex items-center mb-4 rounded-3xl px-3">   
+
+                            <i class="fa-solid fa-lock"></i>
+                            <input class="w-full p-4 bg-orange-50 outline-none border-none rounded-3xl text-[#333]" type="password" name="" id="" 
+                            placeholder="Constraseña">
+
+                        </label>
+
+                        <input class="bg-orange-50 rounded-3xl border-none py-3 px-4 w-fit cursor-pointer mt-3 hover:bg-orange-100" type="submit" value="Registrarse" >
+
+                    </form>
                 </div>
 
             </div>
 
-            <!--Formulario de Login y registro-->
-            <div class="contenedor__login-register">
-
-                <!--Login-->
-                <form action="" class="formulario__login">
-
-                    <h2>Iniciar Sesión</h2>
-
-                    <input type="text" placeholder="Correo Electronico">
-
-                    <input type="password" placeholder="Contraseña">
-
-                    <button>Entrar</button>
-
-                </form>
-
-                <!--Register-->
-                <form action="" class="formulario__register">
-
-                    <h2>Regístrarse</h2>
-
-                    <input type="text" placeholder="Nombre completo">
-
-                    <input type="number" placeholder="Numero de celular">
-
-                    <input type="text" placeholder="Correo Electronico">
-
-                    <input type="password" placeholder="Contraseña">
-
-                    <button>Regístrarse</button>
-
-                </form>
-
-            </div>
-            
         </div>
 
-    </main>
+        <!-- Formulario inicio Sesión -->
+
+        <div class="Sesion mx-auto flex items-center absolute border-2 border-orange-500 rounded-3xl translate-y-[-300%] max-w-[900px] h-[500px] max-[580px]:flex-col max-[580px]:h-auto ">
+
+            <div class="w-2/5 flex justify-center flex-col text-center rounded-tl-3xl rounded-l-3xl bg-orange-50 h-full max-[580px]:w-full max-[580px]:p-5 max-[580px]:rounded-t-3xl max-[580px]:rounded-bl-none">
+                <div class="w-full px-8">
+                    <h2 class="text-4xl ">Bienvenido Importador</h2>
+                    <p class="my-4">Para Poder comprar Registra tus datos
+                    </p>
+                    <input class="bg-transparent border-2 border-orange-200 rounded-3xl py-3 px-5 cursor-pointer hover:bg-orange-200 hover:border-none hover:text-white"  type="submit" value="registrarse" id="registrarse">
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center w-3/5 rounded-tr-3xl rounded-br-3xl bg-orange-100 h-full  max-[580px]:w-full max-[580px]:p-5 max-[580px]:rounded-t-3xl max-[580px]:rounded-bl-none">
+                
+                <div class="flex flex-col items-center justify-center px-8 ">
+
+                    <h2 class="text-3xl">Inica Sesión</h2>
+                    <form action="" class="mt-8 flex flex-col items-center">
+
+                        <label for="" class="flex items-center mb-4 rounded-3xl px-3">
+
+                            <i class="fa-solid fa-envelope"></i>
+                            <input class="w-full p-4 bg-orange-50 outline-none border-none rounded-3xl text-[#333]" type="email" name="" id="" placeholder="Email">
+
+                        </label>
+
+                        <label for="" class="flex items-center mb-4 rounded-3xl px-3">   
+
+                            <i class="fa-solid fa-lock"></i>
+                            <input class="w-full p-4 bg-orange-50 outline-none border-none rounded-3xl text-[#333]" type="password" name="" id="" 
+                            placeholder="Constraseña">
+
+                        </label>
+
+                        <input class="bg-orange-50 rounded-3xl border-none py-3 px-4 w-fit cursor-pointer mt-3 hover:bg-orange-100" type="submit" value="Iniciar Sesion" >
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 
-
+    <script src="/src/js/login.js"></script>
+        
 </body>
-
-<script src="/src/js/iniciosesion.js"></script>
 
 </html>
