@@ -22,12 +22,4 @@ $(document).ready(function(){
 		} setTimeout(showProduct,400);
 	});
 
-	// MOSTRANDO TODOS LOS PRODUCTOS =======================
-
-	$('.category_item[category="all"]').click(function(){
-		function showAll(){
-			$('.product-item').show();
-			$('.product-item').css('transform', 'scale(1)');
-		} setTimeout(showAll,400);
-	});
 });
